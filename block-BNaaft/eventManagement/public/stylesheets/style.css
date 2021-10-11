@@ -1,0 +1,120 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* background-image: linear-gradient(to right, red, yellow); */
+  background: url(../images/back.jpg);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+
+header {
+  background-color: coral;
+  border-radius: 10px;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+a {
+  color: #00b7ff;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+h1 {
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+}
+img {
+  width: 100%;
+}
+.image-box {
+  width: 300px;
+  padding: 1rem;
+  border: 2px solid white;
+  margin-bottom: 1rem;
+  box-shadow: rgba(31, 31, 206, 0.25) 0px 30px 60px -12px inset,
+    rgba(151, 140, 140, 0.3) 0px 18px 36px -18px inset;
+}
+.hero-img {
+  padding: 1rem;
+  margin: 0 auto;
+  width: 800px;
+}
+.back-home {
+  text-align: center;
+}
+p {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+}
+button {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 2px solid;
+  font-size: 1rem;
+}
+
+.addEvent {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.event-list {
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.event {
+  padding: 1rem;
+  text-align: center;
+}
+.addevent-image {
+  background-color: white;
+  margin: 0 auto;
+  border: 2px solid;
+  width: 400px;
+}
+label {
+  color: white;
+  font-size: 1.2rem;
+}
+.add-form {
+  width: 300px;
+  margin: 0 auto;
+}
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+h2 {
+  color: whitesmoke;
+}
+input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+textarea {
+  width: 300px;
+  border-radius: 10px;
+}

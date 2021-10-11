@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="back-home">
+            <a href="/"><button>HOME</button></a>
+        </div>
+      
+      <h3>ADD NEW EVENT</h3>
+      <section class="add-form">
+        <form action="/events" method="POST">
+          <label for="text">Title</label>
+          <input type="text" name="title" placeholder="Title" />
+
+          <label for="text">Summary</label>
+          <textarea name="summary" id="" cols="20" rows="3"></textarea>
+
+          <label for="text">Host</label>
+          <input type="text" name="host" placeholder="Host" />
+
+          <label for="text">Start_date</label>
+          <input type="date" name="start_date" placeholder="dd/mm/yyyy" />
+
+          <label for="text">End_date</label>
+          <input type="date" name="end_date" placeholder="dd/mm/yyyy" />
+
+          <label for="text">Category</label>
+          <input
+            id="text"
+            type="text"
+            name="even_category"
+            placeholder="Enter Category"
+            required
+          />
+          <label for="title">Location</label>
+          <input type="text" name="location" placeholder="Location" />
+
+          <div class="submit">
+            <input type="submit" value="ADD NEW EVENT" />
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
