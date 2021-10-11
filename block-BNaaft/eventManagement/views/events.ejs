@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Event List</h1>
+      </header>
+
+      <section class="event-list">
+        <% events.forEach(event =>{%>
+        <a href="/events/<%= event.id %>"><h2><%= event.title %></h2></a>
+        <%})%>
+      </section>
+
+      <div class="event">
+        <a href="/events/new"><button>ADD EVENT</button></a>
+      </div>
+
+      <div class="addevent-image">
+        <img src="images/add events.png" alt="" />
+      </div>
+
+      <div class="event">
+        <a href="/"><button>Back</button></a>
+      </div>
+    </div>
+  </body>
+</html>

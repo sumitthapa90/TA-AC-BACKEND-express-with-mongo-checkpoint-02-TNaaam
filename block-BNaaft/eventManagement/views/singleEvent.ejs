@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Single Event Details</h1>
+    </header>
+
+    <section class="singleEvent">
+      <div class="detail">
+        <h2>Title: <%= events.title%></h2>
+        <h2>Summary: <%= events.summary%></h2>
+        <h2>Host: <%= events.host%></h2>
+        <h2>Start_Date<%= events.start_date%></h2>
+        <h2>End: Date<%= events.end_date%></h2>
+        <h2>Category: <%= events.category%></h2>
+        <h2>Location: <%= events.location%></h2>
+        <h2>Likes: <%= events.likes %></h2>
+      </div>
+    </section>
+
+    <a href="/events/<%= events.id%>/likes"><button>likes</button></a>
+    <a href="/events/<%= events.id%>/edit"><button>Edit</button></a>
+    <a href="/events/<%= events.id%>/delete"><button>Delete</button></a>
+    <a href="/"><button>Home</button></a>
+
+    <div class="remaks">
+      <h3>Remaks</h3>
+      <div class="remarks-sec">
+        <form action="/remarks/<%= events.id%>/remarks" method="POST">
+          <div>
+            <label for="text">Remarks</label>
+          </div>
+
+          <textarea name="title" id="" cols="30" rows="10"></textarea>
+          <div>
+            <input type="submit" value="Add Remarks" />
+          </div>
+
+          <div>
+            <% events.remarksId.forEach(remark =>{%>
+            <h2><%= remark.title%></h2>
+            <a href="/remarks/<%= remark.id%>/edit"><button>Edit</button></a>
+
+            <%})%>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
