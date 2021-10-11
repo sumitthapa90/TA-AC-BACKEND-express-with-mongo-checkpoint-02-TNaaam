@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="back-home">
+        <a href="/"><button>HOME</button></a>
+      </div>
+
+      <h3>ADD NEW EVENT</h3>
+      <section class="add-form">
+        <form action="/events/<%= events.id%>" method="POST">
+          <label for="text">Title</label>
+          <input
+            type="text"
+            name="title"
+            placeholder="Title"
+            value="<%= events.title%>"
+          />
+
+          <label for="text">Summary</label>
+          <textarea name="summary" id="" cols="20" rows="3">
+            <%= events.summary%>
+          </textarea>
+
+          <label for="text">Host</label>
+          <input
+            type="text"
+            name="host"
+            placeholder="Host"
+            value="<%= events.host%>"
+          />
+
+          <label for="text">Start_date</label>
+          <input
+            type="date"
+            name="start_date"
+            placeholder="dd/mm/yyyy"
+            value="<%= events.start_date%>"
+          />
+
+          <label for="text">End_date</label>
+          <input
+            type="date"
+            name="end_date"
+            placeholder="dd/mm/yyyy"
+            value="<%= events.end_date%>"
+          />
+
+          <label for="text">Category</label>
+          <input
+            id="text"
+            type="text"
+            name="even_category"
+            placeholder="Enter Category"
+            required
+            value="<%= events.event_category%>"
+          />
+          <label for="title">Location</label>
+          <input
+            type="text"
+            name="location"
+            placeholder="Location"
+            value="<%= events.location%>"
+          />
+
+          <div class="submit">
+            <input type="submit" value="Update" />
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
